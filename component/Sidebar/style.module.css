@@ -1,0 +1,41 @@
+.container{
+    height: 100vh;
+    width: 60px;
+    background-color : #F6F2FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'roboto';
+    gap: 8vh;
+    position: fixed;
+}
+
+.logo{
+    height: 35px;
+    object-fit: contain;
+    mix-blend-mode: darken;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    font-family: 'arvo';
+    margin-top: 4vh;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.iconContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
