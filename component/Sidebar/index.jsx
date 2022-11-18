@@ -15,7 +15,7 @@ const sidebar = () => {
                 <label>MyEbook</label>
             </div>
             <div className={styles.pages}>
-                <IconContext.Provider value={{style : {fontSize : '25px' , color : '#261057'}}}>
+                <IconContext.Provider value={{style : {fontSize : '25px' , color : '#040924'}}}>
                     <div className={styles.iconContainer}>
                         <AiFillHome/>
                         <label>Home</label>

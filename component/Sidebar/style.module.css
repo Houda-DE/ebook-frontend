@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .container{
     height: 100vh;
     width: 60px;
@@ -19,9 +21,11 @@
 .logoContainer{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 4px;
-    font-size: 12px;
-    font-family: 'arvo';
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
     margin-top: 4vh;
 }
 

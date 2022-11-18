@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.container{
+    padding-left: 90px;
+    position : fixed;
+    width: calc(100vw - 90px);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 25vw;
+    align-items: center;
+}
+
+.text{
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+}
+
+.notification{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+
+.notification button{
+    border: none;
+    outline : none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button{
+    border: none;
+    outline : none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.input{
+    outline: none;
+    border: none;
+    width: 85%;
+    background-color: transparent;
+}
+
+.searchContainer{
+    height: 35px;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F6F2FF;
+}
+
