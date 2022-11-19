@@ -7,7 +7,7 @@ import Navbar from '../component/Navbar'
 
 export default function Home() {
   return (
-    <div>
+    <div style={{backgroundColor : '#222629'}}>
       <Navbar/>
       <Sidebar/>
       <Welcome/>

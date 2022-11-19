@@ -9,6 +9,7 @@
     flex-direction: row;
     gap: 25vw;
     align-items: center;
+    color: white;
 }
 
 .text{
@@ -54,6 +55,6 @@
     gap: 5px;
     padding: 5px;
     border-radius: 10px;
-    background-color: #F6F2FF;
+    background-color: white;
 }
 

@@ -7,7 +7,7 @@ import styles from './style.module.css'
 const navbar = () => {
     return(
         <div className={styles.container}>
-            <IconContext.Provider value={{style : {fontSize : '25px' , color : '#040924'}}}>
+            <IconContext.Provider value={{style : {fontSize : '25px' , color : '#86c232'}}}>
                 <div className={styles.text}>
                     MyEbook
                 </div>

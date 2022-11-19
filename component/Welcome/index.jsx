@@ -136,6 +136,92 @@ const Welcome = () => {
         },
     ]
 
+    const readingList = [
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+    ]
+
+    const myBooks = [
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+        {
+            title : 'livre',
+            author : [
+                {
+                    name : 'author1'
+                },
+            ],
+            image : 'bookr.webp',
+            price : 50
+        },
+    ]
+
     return(
         <div className={styles.container}>
             <div className={styles.booksContainer}>
@@ -162,14 +248,74 @@ const Welcome = () => {
                         }
                     </div>
                 </div>
-                <div className={styles.bookCardContainer}>
-                    <Card color='#A4FAF5' title='My reading list'></Card>
-                    <Card color='#CAFAA4' title='My books'></Card>
+                <div className={styles.booksCardContainer}>
+                    <Card color='#86c232' title='My reading list'>
+                        <div>
+                            {
+                                readingList.length === 0 ? <div>You don't have a reading list yet</div> :  readingList.map((element , index) => {
+                                    return(
+                                        index < 3 ? 
+                                        <div className={styles.bookCardContainer}>
+                                            <img className={styles.cardImg} src={element.image}/>
+                                            <div>{element.title}</div>
+                                            <div>
+                                                {
+                                                    element.author.map((el , i) => {
+                                                        return(
+                                                           element.author.length === 1 ? el.name : i === 0 ?  `${el.name}...`:""
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                        </div>
+                                        : ""
+                                    )
+                                })
+                            }
+                        </div>
+                    </Card>
+                    <Card color='#86c232' title='My books'>
+                        <div>
+                            {
+                                myBooks.length === 0 ? <div>You don't have a reading list yet</div> :  myBooks.map((element , index) => {
+                                    return(
+                                        index < 3 ? 
+                                        <div className={styles.bookCardContainer}>
+                                            <img className={styles.cardImg} src={element.image}/>
+                                            <div>{element.title}</div>
+                                            <div>
+                                                {
+                                                    element.author.map((el , i) => {
+                                                        return(
+                                                           element.author.length === 1 ? el.name : i === 0 ?  `${el.name}...`:""
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                        </div>
+                                        : ""
+                                    )
+                                })
+                            }
+                        </div>
+                    </Card>
                 </div>
             </div>
             <div>
-                <Card color='#FAE2A4' title='Authors'></Card>
-                <Card color='#FAA4EC' title='Categories'></Card>
+                <Card color='#86c232' title='Authors'>
+                    <div>
+                        {
+
+                        }
+                    </div>
+                </Card>
+                <Card color='#86c232' title='Categories'>
+                    <div>
+                        {
+
+                        }
+                    </div>
+                </Card>
             </div>
         </div>
     )

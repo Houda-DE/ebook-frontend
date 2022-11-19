@@ -8,6 +8,7 @@
     flex-direction: row;
     gap: 20px;
     font-family: 'roboto';
+    color: white;
 }
 
 .booksContainer{
@@ -48,17 +49,33 @@
     outline: none;
     border: none;
     font-size: 16px;
+    color: white;
 }
 
 .button:hover{
     color: blue;
 }
 
-.bookCardContainer{
+.booksCardContainer{
     display: flex;
     flex-direction: row;
     gap: 3vw;
     width: 55vw;
     align-items: center;
     justify-content: center;
+}
+
+.bookCardContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardImg{
+    height: 40px;
+    width: fit-content;
+    object-fit: contain;
+    border-radius: 5px;
 }
