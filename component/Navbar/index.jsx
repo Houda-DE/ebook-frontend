@@ -11,16 +11,10 @@ const navbar = () => {
                 <div className={styles.text}>
                     MyEbook
                 </div>
-                <div className={styles.searchContainer}>
-                    <input
-                        placeholder="Search..."
-                        className={styles.input}
-                    />
-                    <button className={styles.button}>
+                <div className={styles.notification}>
+                <button className={styles.button}>
                         <FiSearch/>
                     </button>
-                </div>
-                <div className={styles.notification}>
                     <button>
                         <BiBell/>
                     </button>

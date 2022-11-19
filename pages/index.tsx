@@ -7,7 +7,7 @@ import Navbar from '../component/Navbar'
 
 export default function Home() {
   return (
-    <div style={{minHeight : '100vh' , backgroundColor : '#222629' , maxWidth : '100vw'}}>
+    <div style={{minHeight : '100vh' , backgroundColor : '#222629' , minWidth : '100vw' , maxWidth : '100vw'}}>
       <Navbar/>
       <Sidebar/>
       <Welcome/>

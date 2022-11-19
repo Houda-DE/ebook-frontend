@@ -10,6 +10,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    padding: 14vh 5vh 4vh 12vh;
 }
 
 .booksContainer{
@@ -104,16 +105,16 @@
 @media (min-width:320px)  { 
 
     .popularBooks{
-        width: 70vw;
+        width: 60vw;
         grid-template-columns: auto auto;
     }
 
     .categorieauthorCardsContainer{
-        visibility: hidden;
+        display: none;
     }
 
     .booksCardContainer{
-        visibility:  hidden;
+        display: none;
     }
 
 }
@@ -127,17 +128,6 @@
         grid-template-columns: auto auto auto;
     }
 
-    .categorieauthorCardsContainer{
-        visibility: visible;
-        width: fit-content;
-        flex-direction: row;
-    }
-
-    .booksCardContainer{
-        visibility:  visible;
-        width: fit-content;
-    }
-
     .booksContainer{
         flex-wrap: wrap;
     }
@@ -148,11 +138,21 @@
 
     .container{
         flex-direction: column;
-        padding: 14vh 5vh 4vh 15vh;
     }
 
     .popularBooks{
         grid-template-columns: auto auto auto auto;
+    }
+
+    .categorieauthorCardsContainer{
+        display:flex;
+        width: fit-content;
+        flex-direction: row;
+    }
+
+    .booksCardContainer{
+        display: flex;
+        width: fit-content;
     }
 
 }
