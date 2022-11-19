@@ -105,7 +105,7 @@ const Welcome = () => {
             price : 50
         },
         {
-            title : 'livre',
+            title : 'livre22222222',
             author : [
                 {
                     name : 'author1'
@@ -115,7 +115,7 @@ const Welcome = () => {
             price : 50
         },
         {
-            title : 'livre',
+            title : 'livrehjdjdiiid',
             author : [
                 {
                     name : 'author1'
@@ -125,7 +125,7 @@ const Welcome = () => {
             price : 50
         },
         {
-            title : 'livre',
+            title : 'livre 6555zz',
             author : [
                 {
                     name : 'author1'
@@ -138,7 +138,7 @@ const Welcome = () => {
 
     const readingList = [
         {
-            title : 'livre',
+            title : 'livrehjruurue',
             author : [
                 {
                     name : 'author1'
@@ -148,7 +148,7 @@ const Welcome = () => {
             price : 50
         },
         {
-            title : 'livre',
+            title : 'livreuefuufu',
             author : [
                 {
                     name : 'author1'
@@ -158,7 +158,7 @@ const Welcome = () => {
             price : 50
         },
         {
-            title : 'livre',
+            title : 'livrejuefujeJBll',
             author : [
                 {
                     name : 'author1'
@@ -181,7 +181,7 @@ const Welcome = () => {
 
     const myBooks = [
         {
-            title : 'livre',
+            title : 'livrede ch pas',
             author : [
                 {
                     name : 'author1'
@@ -191,7 +191,7 @@ const Welcome = () => {
             price : 50
         },
         {
-            title : 'livre',
+            title : 'livre coucou',
             author : [
                 {
                     name : 'author1'
@@ -201,7 +201,7 @@ const Welcome = () => {
             price : 50
         },
         {
-            title : 'livre',
+            title : 'livre 123',
             author : [
                 {
                     name : 'author1'
@@ -221,6 +221,54 @@ const Welcome = () => {
             price : 50
         },
     ]
+
+    const authors = [
+        {
+            img : "",
+            name : "Kateb Yassine"
+        },
+        {
+            img : "",
+            name : "Ahlem moustaghanmi"
+        },
+        {
+            img : "",
+            name : "Moloud Feraoun"
+        },
+        {
+            img : "",
+            name : "Victor Hugo"
+        },
+        {
+            img : "",
+            name : "Bouteflika"
+        },
+    ]
+
+    const categories = [
+        {
+            name : 'Category1'
+        },
+        {
+            name : 'Category2'
+        },
+        {
+            name : 'Category3'
+        },
+        {
+            name : 'Category4'
+        },
+        {
+            name : 'Category5'
+        },
+        {
+            name : 'Category4'
+        },
+        {
+            name : 'Category5'
+        },
+    ]
+    
 
     return(
         <div className={styles.container}>
@@ -301,18 +349,35 @@ const Welcome = () => {
                     </Card>
                 </div>
             </div>
-            <div>
+            <div className={styles.categorieauthorCardsContainer}>
                 <Card color='#86c232' title='Authors'>
                     <div>
                         {
-
+                            authors.map((element , index) => {
+                                return(
+                                    <ul>
+                                        <li>
+                                            <img src=''/>
+                                            {element.name}
+                                        </li>
+                                    </ul>
+                                )
+                            })
                         }
                     </div>
                 </Card>
                 <Card color='#86c232' title='Categories'>
                     <div>
                         {
-
+                            categories.map((element , index) => {
+                                return(
+                                    index < 5 ? 
+                                        <ul>
+                                            <li>{element.name}</li>
+                                        </ul>
+                                    :"" 
+                                )
+                            })
                         }
                     </div>
                 </Card>

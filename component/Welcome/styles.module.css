@@ -3,7 +3,7 @@
     width: fit-content;
     max-height: calc(100vh-60px);
     max-width: calc(100vw-60px);
-    padding: 15vh;
+    padding: 14vh 5vh 4vh 15vh;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -66,11 +66,12 @@
 }
 
 .bookCardContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 15% 40% 40%;
     flex-direction: row;
-    gap: 3px;
     align-items: center;
     justify-content: center;
+    padding: 3px 0px;
 }
 
 .cardImg{
@@ -78,4 +79,12 @@
     width: fit-content;
     object-fit: contain;
     border-radius: 5px;
+}
+
+.categorieauthorCardsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    width: 25vw;
+    align-items: center;
 }
