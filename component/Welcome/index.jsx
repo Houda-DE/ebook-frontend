@@ -136,6 +136,47 @@ const Welcome = () => {
         },
     ]
 
+    const readingList = [
+        {
+            title : 'title',
+            author : [
+                {name : 'bnadem'},
+                {name : 'le3war'},
+            ],
+            image : 'bookp.webp'
+        },
+        {
+            title : 'title',
+            author : [
+                {name : 'bnadem'},
+                {name : 'le3war'},
+            ],
+            image : 'bookq.webp'
+        },
+        {
+            title : 'title',
+            author : [
+                {name : 'bnadem'},
+            ],
+            image : 'bookr.webp'
+        },
+        {
+            title : 'title',
+            author : [
+                {name : 'bnadem'},
+                {name : 'le3war'},
+            ],
+            image : 'bookq.webp'
+        },
+        {
+            title : 'title',
+            author : [
+                {name : 'bnadem'},
+            ],
+            image : 'bookr.webp'
+        }
+    ]
+
     return(
         <div className={styles.container}>
             <div className={styles.booksContainer}>
@@ -163,8 +204,24 @@ const Welcome = () => {
                     </div>
                 </div>
                 <div className={styles.bookCardContainer}>
-                    <Card color='#A4FAF5' title='My reading list'></Card>
-                    <Card color='#CAFAA4' title='My books'></Card>
+                    <Card color='#A4FAF5' title='My reading list'>
+                        {
+                            readingList.map((element , index) =>{
+                                return(
+                                    <div className={styles.readingContainer}>
+                                        <img src={element.image} className={styles.img} />
+                                        <div>{element.title}</div>
+                                        <div>{element.author.map((el ,i)=>{
+                                            return(
+                                                <div>{el.name}</div>
+                                            )
+                                        })}</div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </Card>
+                    <Card color='#CAFAA4' title='My books'></Card>0.
                 </div>
             </div>
             <div>

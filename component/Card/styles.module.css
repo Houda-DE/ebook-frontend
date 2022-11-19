@@ -4,4 +4,12 @@
     gap: 10px;
     border-radius: 15px;
     padding: 5px;
+    height: fit-content;
+    width: 20vw;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
