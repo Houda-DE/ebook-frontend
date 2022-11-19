@@ -224,23 +224,23 @@ const Welcome = () => {
 
     const authors = [
         {
-            img : "",
+            img : "men.jpg",
             name : "Kateb Yassine"
         },
         {
-            img : "",
+            img : "men.jpg",
             name : "Ahlem moustaghanmi"
         },
         {
-            img : "",
+            img : "women.jpg",
             name : "Moloud Feraoun"
         },
         {
-            img : "",
+            img : "men.jpg",
             name : "Victor Hugo"
         },
         {
-            img : "",
+            img : "men.jpg",
             name : "Bouteflika"
         },
     ]
@@ -357,7 +357,6 @@ const Welcome = () => {
                                 return(
                                     <ul>
                                         <li>
-                                            <img src=''/>
                                             {element.name}
                                         </li>
                                     </ul>

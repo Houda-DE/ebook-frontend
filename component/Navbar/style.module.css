@@ -58,3 +58,28 @@
     background-color: white;
 }
 
+@media (min-width:320px)  {
+
+    .container{
+        gap: 40px;
+    }
+    
+    .text{
+        visibility: hidden;
+    }
+
+}
+@media (min-width:480px)  {}
+@media (min-width:600px)  {}
+@media (min-width:801px)  {
+    .container{
+        gap: 25vw;
+    }
+    
+    .text{
+        visibility: visible;
+    }
+}
+@media (min-width:1025px) {}
+@media (min-width:1320px) {}
+
