@@ -1,0 +1,6 @@
+.container{
+    z-index: 10000;
+    background-color: #474b4f;
+    height: fit-content;
+    width: fit-content;
+}
