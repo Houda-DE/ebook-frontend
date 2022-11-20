@@ -3,7 +3,7 @@ import React from "react"
 import Form from '../Form'
 import styles from './styles.module.css'
 
-const authentication = () => {
+const authentication = ({open , setOpen}) => {
 
     const usernameRef = useRef()
     const emailRef = useRef()
@@ -46,10 +46,11 @@ const authentication = () => {
 
     return(
         <div className = {styles.container}>
-            <div>
-                <button>Sign up</button>
-                <button>Sign in</button>
+            <div className={styles.buttonContainer}>
+                <button style={{borderTopLeftRadius : '20px' , backgroundColor : `${authState === 'signup' ?  '#86c232' : '#61892f'}`}}>Sign up</button>
+                <button style={{borderTopRightRadius : '20px'  , backgroundColor : `${authState === 'signin' ?  '#86c232' : '#61892f'}`}}>Sign in</button>
             </div>
+            <div>x</div>
             {
                 authState === 'signup' ? 
                    <Form title={'Sign up'} inputs={signupElements} submitButton={'Sign up'} options={[]} onSubmitFunc={SignupSubmit}/>

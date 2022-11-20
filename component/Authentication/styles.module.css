@@ -1,6 +1,17 @@
 .container{
+    margin: 30px;
     z-index: 10000;
     background-color: #474b4f;
     height: fit-content;
     width: fit-content;
+    border-radius: 20px;
+}
+
+.buttonContainer button{
+    height: 35px;
+    width: 50%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-family: 'roboto';
 }
