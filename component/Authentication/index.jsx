@@ -46,11 +46,7 @@ const authentication = ({open , setOpen}) => {
 
     return(
         <div className = {styles.container}>
-            <div className={styles.buttonContainer}>
-                <button style={{borderTopLeftRadius : '20px' , backgroundColor : `${authState === 'signup' ?  '#86c232' : '#61892f'}`}}>Sign up</button>
-                <button style={{borderTopRightRadius : '20px'  , backgroundColor : `${authState === 'signin' ?  '#86c232' : '#61892f'}`}}>Sign in</button>
-            </div>
-            <div>x</div>
+            <button className={styles.closeButton}>x</button>
             {
                 authState === 'signup' ? 
                    <Form title={'Sign up'} inputs={signupElements} submitButton={'Sign up'} options={[]} onSubmitFunc={SignupSubmit}/>

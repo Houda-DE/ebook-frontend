@@ -5,6 +5,7 @@
     height: fit-content;
     width: fit-content;
     border-radius: 20px;
+    position: relative;
 }
 
 .buttonContainer button{
@@ -14,4 +15,19 @@
     border: none;
     font-size: 18px;
     font-family: 'roboto';
+}
+
+.closeButton{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.closeButton.closeButton:hover{
+    color: #86c232;
 }
