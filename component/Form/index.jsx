@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 
-const form = ({title , inputs , options , submitButton , onSubmitFunc}) => {
+const form = ({title , inputs , option , submitButton ,onClickFunc , onSubmitFunc}) => {
     return(
         <div className={styles.container}>
             <div className={styles.title}>{title}</div>
@@ -22,17 +22,8 @@ const form = ({title , inputs , options , submitButton , onSubmitFunc}) => {
                         })
                     }
                 </div>
-                <div>
-                    {
-                        options.map((element , index) =>{
-                            return(
-                                <div>
-                                    <button onClick = {(e) => element.onClickFunc(e)}>{element.name}</button>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
+                
+                <button onClick = {onClickFunc}>{option}</button>
                 <button className={styles.submitButton} type="submit">{submitButton}</button>
             </form>
         </div>

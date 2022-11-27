@@ -5,7 +5,7 @@
     max-width: calc(100vw-60px);
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 8vw;
     font-family: 'roboto';
     color: white;
     align-items: center;
@@ -83,7 +83,6 @@
 .categorieauthorCardsContainer{
     display: flex;
     gap: 4vh;
-    
 }
 
 .authorimg{
