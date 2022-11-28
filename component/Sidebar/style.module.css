@@ -3,7 +3,7 @@
 .container{
     height: 100vh;
     width: 60px;
-    background-color : #F6F2FF;
+    background-color : transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 .logo{
     height: 35px;
     object-fit: contain;
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
 }
 
 .logoContainer{
@@ -27,18 +27,20 @@
     font-size: 15px;
     font-family: 'Dancing Script', cursive;
     margin-top: 4vh;
+    color: white;
 }
 
 .pages{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5vh;
 }
 
 .iconContainer{
     display: flex;
     flex-direction: column;
     font-size: 10px;
+    color : white;
     align-items: center;
     justify-content: center;
     gap: 2px;

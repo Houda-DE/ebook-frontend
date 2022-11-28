@@ -7,20 +7,14 @@ import styles from './style.module.css'
 const navbar = () => {
     return(
         <div className={styles.container}>
-            <IconContext.Provider value={{style : {fontSize : '25px' , color : '#040924'}}}>
+            <IconContext.Provider value={{style : {fontSize : '25px' , color : '#86c232'}}}>
                 <div className={styles.text}>
                     MyEbook
                 </div>
-                <div className={styles.searchContainer}>
-                    <input
-                        placeholder="Search..."
-                        className={styles.input}
-                    />
-                    <button className={styles.button}>
+                <div className={styles.notification}>
+                <button className={styles.button}>
                         <FiSearch/>
                     </button>
-                </div>
-                <div className={styles.notification}>
                     <button>
                         <BiBell/>
                     </button>
