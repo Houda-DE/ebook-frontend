@@ -10,6 +10,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    position: relative;
     padding: 14vh 5vh 4vh 12vh;
 }
 
@@ -70,21 +71,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-}
-
-.readingContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-}
-
-.img{
-    height: 30px;
-    object-fit: contain;
-=======
     padding: 3px 0px;
 }
 
@@ -113,8 +99,6 @@
     justify-content: center;
     flex-direction: row;
 }
-
-
 
 @media (min-width:320px)  { 
 
@@ -199,5 +183,4 @@
         width: 55vw;
     }
 
->>>>>>> 6fd702d018d5d3e4ddf995834cfa94d5954f84a7
 }

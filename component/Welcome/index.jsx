@@ -6,8 +6,6 @@ import { useState } from 'react'
 
 const Welcome = () => {
 
-    const [open , setOpen] = useState(true)
-
     const books = [
         {
             title : 'livre',
@@ -180,49 +178,6 @@ const Welcome = () => {
         },
     ]
 
-<<<<<<< HEAD
-    const readingList = [
-        {
-            title : 'title',
-            author : [
-                {name : 'bnadem'},
-                {name : 'le3war'},
-            ],
-            image : 'bookp.webp'
-        },
-        {
-            title : 'title',
-            author : [
-                {name : 'bnadem'},
-                {name : 'le3war'},
-            ],
-            image : 'bookq.webp'
-        },
-        {
-            title : 'title',
-            author : [
-                {name : 'bnadem'},
-            ],
-            image : 'bookr.webp'
-        },
-        {
-            title : 'title',
-            author : [
-                {name : 'bnadem'},
-                {name : 'le3war'},
-            ],
-            image : 'bookq.webp'
-        },
-        {
-            title : 'title',
-            author : [
-                {name : 'bnadem'},
-            ],
-            image : 'bookr.webp'
-        }
-    ]
-
-=======
 
     const authors = [
         {
@@ -272,7 +227,6 @@ const Welcome = () => {
     ]
     
 
->>>>>>> 6fd702d018d5d3e4ddf995834cfa94d5954f84a7
     return(
         <div className={styles.container}>
             <div className={styles.popularBooksContainer}>
@@ -313,33 +267,6 @@ const Welcome = () => {
                             })
                         }
                     </div>
-<<<<<<< HEAD
-                </div>
-                <div className={styles.bookCardContainer}>
-                    <Card color='#A4FAF5' title='My reading list'>
-                        {
-                            readingList.map((element , index) =>{
-                                return(
-                                    <div className={styles.readingContainer}>
-                                        <img src={element.image} className={styles.img} />
-                                        <div>{element.title}</div>
-                                        <div>{element.author.map((el ,i)=>{
-                                            return(
-                                                <div>{el.name}</div>
-                                            )
-                                        })}</div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </Card>
-                    <Card color='#CAFAA4' title='My books'></Card>0.
-                </div>
-            </div>
-            <div>
-                <Card color='#FAE2A4' title='Authors'></Card>
-                <Card color='#FAA4EC' title='Categories'></Card>
-=======
                 </Card>
                 <Card color='#86c232' title='Categories'>
                     <div>
@@ -356,11 +283,7 @@ const Welcome = () => {
                         }
                     </div>
                 </Card>
->>>>>>> 6fd702d018d5d3e4ddf995834cfa94d5954f84a7
             </div>
-            {
-                open === true ? <Authentication open={open} setOpen={setOpen}/> : ""
-            }
         </div>
     )
 }

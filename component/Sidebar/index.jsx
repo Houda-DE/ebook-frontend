@@ -16,10 +16,12 @@ const sidebar = () => {
             </div>
             <div className={styles.pages}>
                 <IconContext.Provider value={{style : {fontSize : '25px' , color : '#86c232'}}}>
-                    <div className={styles.iconContainer}>
-                        <AiFillHome/>
-                        <label>Home</label>
-                    </div>
+                    <Link href='/'>
+                        <div className={styles.iconContainer}>
+                            <AiFillHome/>
+                            <label>Home</label>
+                        </div>
+                    </Link>
                     <div className={styles.iconContainer}>
                         <BsFillBookmarkCheckFill/>
                         <label>My Books</label>
@@ -40,10 +42,12 @@ const sidebar = () => {
                         <TfiViewList/>
                         <label>Categories</label>
                     </div>
-                    <div className={styles.iconContainer}>
-                        <BsPencilSquare/>
-                        <label>Authors</label>
-                    </div>
+                    <Link href='/authors'>
+                        <div className={styles.iconContainer}>
+                            <BsPencilSquare/>
+                            <label>Authors</label>
+                        </div>
+                    </Link>
                 </IconContext.Provider>
            </div>
         </div>

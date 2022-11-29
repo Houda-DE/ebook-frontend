@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+import Image from 'next/image'
 
 const book = ({title , author , price , image}) => {
     return(
